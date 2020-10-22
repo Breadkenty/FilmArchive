@@ -1,0 +1,15 @@
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/obj/Debug/netcoreapp3.1/FilmArchive.Persistence.csprojAssemblyReference.cache
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/obj/Debug/netcoreapp3.1/FilmArchive.Persistence.AssemblyInfoInputs.cache
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/obj/Debug/netcoreapp3.1/FilmArchive.Persistence.AssemblyInfo.cs
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/obj/Debug/netcoreapp3.1/FilmArchive.Persistence.csproj.CoreCompileInputs.cache
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/bin/Debug/netcoreapp3.1/FilmArchive.Persistence.deps.json
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/bin/Debug/netcoreapp3.1/FilmArchive.Persistence.dll
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/bin/Debug/netcoreapp3.1/FilmArchive.Persistence.pdb
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/bin/Debug/netcoreapp3.1/FilmArchive.Domain.dll
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/bin/Debug/netcoreapp3.1/FilmArchive.Domain.pdb
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/obj/Debug/netcoreapp3.1/FilmArchive.Persistence.csproj.CopyComplete
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/obj/Debug/netcoreapp3.1/FilmArchive.Persistence.dll
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/obj/Debug/netcoreapp3.1/FilmArchive.Persistence.pdb
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/bin/Debug/netcoreapp3.1/FilmArchive.Persistence.runtimeconfig.json
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/bin/Debug/netcoreapp3.1/FilmArchive.Persistence.runtimeconfig.dev.json
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Persistence/obj/Debug/netcoreapp3.1/FilmArchive.Persistence.genruntimeconfig.cache

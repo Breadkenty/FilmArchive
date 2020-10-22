@@ -1,0 +1,9 @@
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Domain/bin/Debug/netcoreapp3.1/FilmArchive.Domain.deps.json
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Domain/bin/Debug/netcoreapp3.1/FilmArchive.Domain.dll
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Domain/bin/Debug/netcoreapp3.1/FilmArchive.Domain.pdb
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Domain/obj/Debug/netcoreapp3.1/FilmArchive.Domain.csprojAssemblyReference.cache
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Domain/obj/Debug/netcoreapp3.1/FilmArchive.Domain.AssemblyInfoInputs.cache
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Domain/obj/Debug/netcoreapp3.1/FilmArchive.Domain.AssemblyInfo.cs
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Domain/obj/Debug/netcoreapp3.1/FilmArchive.Domain.csproj.CoreCompileInputs.cache
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Domain/obj/Debug/netcoreapp3.1/FilmArchive.Domain.dll
+/Users/Kento/Projects/Film Archive/FilmArchive/FilmArchive.Domain/obj/Debug/netcoreapp3.1/FilmArchive.Domain.pdb
