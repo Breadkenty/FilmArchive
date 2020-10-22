@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "/Users/Kento/.dotnet/store/|arch|/|tfm|",
-      "/Users/Kento/.nuget/packages"
-    ]
-  }
-}
