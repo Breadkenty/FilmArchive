@@ -3,15 +3,17 @@ using System;
 using FilmArchive.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace FilmArchive.Persistence.Migrations
 {
     [DbContext(typeof(FilmArchiveDatabaseContext))]
-    partial class FilmArchiveDatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20201022225822_CreatedModels")]
+    partial class CreatedModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -89,9 +91,6 @@ namespace FilmArchive.Persistence.Migrations
                     b.Property<int?>("CameraId")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("EntryId")
-                        .HasColumnType("integer");
-
                     b.Property<int>("ExposureIndex")
                         .HasColumnType("integer");
 
@@ -105,8 +104,6 @@ namespace FilmArchive.Persistence.Migrations
 
                     b.HasIndex("CameraId");
 
-                    b.HasIndex("EntryId");
-
                     b.HasIndex("FilmId");
 
                     b.ToTable("Photos");
@@ -117,10 +114,6 @@ namespace FilmArchive.Persistence.Migrations
                     b.HasOne("FilmArchive.Domain.Models.Camera", "Camera")
                         .WithMany("Photos")
                         .HasForeignKey("CameraId");
-
-                    b.HasOne("FilmArchive.Domain.Models.Entry", null)
-                        .WithMany("Photos")
-                        .HasForeignKey("EntryId");
 
                     b.HasOne("FilmArchive.Domain.Models.Film", "Film")
                         .WithMany("Photos")

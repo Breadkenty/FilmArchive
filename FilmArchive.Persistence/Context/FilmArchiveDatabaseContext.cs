@@ -9,5 +9,8 @@ namespace FilmArchive.Persistence.Context
         {
         }
         public DbSet<Entry> Entries { get; set; }
+        public DbSet<Camera> Cameras { get; set; }
+        public DbSet<Film> Films { get; set; }
+        public DbSet<Photo> Photos { get; set; }
     }
 }
