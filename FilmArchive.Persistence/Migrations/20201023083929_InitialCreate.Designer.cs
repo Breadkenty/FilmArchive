@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FilmArchive.Persistence.Migrations
 {
     [DbContext(typeof(FilmArchiveDatabaseContext))]
-    [Migration("20201023064743_AddedLocations")]
-    partial class AddedLocations
+    [Migration("20201023083929_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -51,6 +51,9 @@ namespace FilmArchive.Persistence.Migrations
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("Notes")
+                        .HasColumnType("text");
 
                     b.Property<string>("ThumbnailUrl")
                         .HasColumnType("text");

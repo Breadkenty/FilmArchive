@@ -10,5 +10,6 @@ namespace FilmArchive.Domain.Models
         public DateTime Date { get; set; }
         public string ThumbnailUrl { get; set; }
         public List<Photo> Photos { get; set; }
+        public string Notes { get; set; }
     }
 }

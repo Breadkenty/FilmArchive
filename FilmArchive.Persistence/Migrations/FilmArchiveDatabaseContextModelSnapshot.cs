@@ -50,6 +50,9 @@ namespace FilmArchive.Persistence.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("timestamp without time zone");
 
+                    b.Property<string>("Notes")
+                        .HasColumnType("text");
+
                     b.Property<string>("ThumbnailUrl")
                         .HasColumnType("text");
 
