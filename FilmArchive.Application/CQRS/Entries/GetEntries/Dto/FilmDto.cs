@@ -6,5 +6,6 @@ namespace FilmArchive.Application.CQRS.Entries.GetEntries.Dto
         public string Brand { get; set; }
         public string stock { get; set; }
         public int Iso { get; set; }
+        public string Size { get; set; }
     }
 }

@@ -7,5 +7,9 @@ namespace FilmArchive.Application.CQRS.Entries.GetEntries.Dto
         public CameraDto Camera { get; set; }
         public FilmDto Film { get; set; }
         public int ExposureIndex { get; set; }
+        public string Location { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Country { get; set; }
     }
 }
