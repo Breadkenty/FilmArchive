@@ -11,5 +11,6 @@ namespace FilmArchive.Application.CQRS.Entries.GetEntries
         public DateTime Date { get; set; }
         public string ThumbnailUrl { get; set; }
         public List<PhotoDto> Photos { get; set; }
+        public string Notes { get; set; }
     }
 }

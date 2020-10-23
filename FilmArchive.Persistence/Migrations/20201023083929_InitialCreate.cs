@@ -211,13 +211,13 @@ namespace FilmArchive.Persistence.Migrations
                 table: "Entries",
                 columns: new string[] { "Title", "Date", "ThumbnailUrl", "Notes" },
                 values: new object[] { "Cumberland Island", Convert.ToDateTime("2017-12-30"), "https://images.squarespace-cdn.com/content/v1/5c75bf3af4755a07a9edee16/1574993734147-4ECDZEPUN4KQMSHMRXHJ/ke17ZwdGBToddI8pDm48kJm83r3_OWfoaznv_JFuXR17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQ3wTtJOt1L0c9Um6kGmfmqFrCpL9H5VSekBTvccASQ5rLjIQLbmY-JxC_jL2SKZiA/22_M7_HP5_400_046.jpg?format=1000w",
-                "To close out" });
+                "Second day in Cumberland Island. We walked towards a beach without footsteps. We some junk along the beach and a sculpture. We decided to hike at night where the moon light guided our way. It was a full moon. We found a cemetary and the Carnegie's property." });
 
             migrationBuilder.InsertData(
                 table: "Entries",
                 columns: new string[] { "Title", "Date", "ThumbnailUrl", "Notes" },
                 values: new object[] { "Villa Viscaya", Convert.ToDateTime("2017-06-17"), "https://images.squarespace-cdn.com/content/v1/5c75bf3af4755a07a9edee16/1574990350616-ZMW341VH19LJO1ODL5JG/ke17ZwdGBToddI8pDm48kKBZURXHI__Vizj_ZdqR7kp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Uaq6a5bx18ISQjcJYQ6n5Ipw9zzksrJwX1ZoTJZIUyyBDi005ms6_8u9A4oz400EjQ/061017_M7_400H_200_006.jpg?format=1000w",
-                "Second day in Cumberland Island. We walked towards a beach without footsteps. We some junk along the beach and a sculpture. We decided to hike at night where the moon light guided our way. It was a full moon. We found a cemetary and the Carnegie's property." });
+                "Visited the Villa Viscaya with Paul. I was already annoyed with Paul by this time." });
 
             migrationBuilder.InsertData(
                 table: "Entries",
@@ -435,61 +435,61 @@ namespace FilmArchive.Persistence.Migrations
                 table: "Photos",
                 columns: new string[] { "Url", "CameraId", "FilmId", "ExposureIndex", "EntryId", "Location", "City", "State", "Country" },
                 values: new object[] { "https://images.squarespace-cdn.com/content/v1/5c75bf3af4755a07a9edee16/1574904418205-4N93G9VTVQDSXPT82KHT/ke17ZwdGBToddI8pDm48kIWvDNhd5re3IU8vCqWJmWB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USm-YWmAMP8HNlW5uZgL1i6kqh0rBaYX8GEuFORMJVbQoaB7cXlC74RGNr1M0KekWQ/1_Scans-135.jpg?format=1000w",
-                 1, 10, 200, 4, "Harvard Yard", "Cambridge", "Massachusetts", "United States" });
+                 1, 10, 200, 5, "Harvard Yard", "Cambridge", "Massachusetts", "United States" });
 
             migrationBuilder.InsertData(
                 table: "Photos",
                 columns: new string[] { "Url", "CameraId", "FilmId", "ExposureIndex", "EntryId", "Location", "City", "State", "Country" },
                 values: new object[] { "https://images.squarespace-cdn.com/content/v1/5c75bf3af4755a07a9edee16/1574904488409-1Q0U8XKEIUAUV2DJ5BM6/ke17ZwdGBToddI8pDm48kDBJr0AumMkUhdBnj9TSR-x7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UTYp609Nc4ZdcUA4VZ0HidYsCgS6faf_g6VPz7aVJdY6iesm8fpB3zYw4SZR-AlygA/11_Rollei_TriX_1600_004.jpg?format=1000w",
-                 1, 8, 1600, 4, "Harvard Square", "Cambridge", "Massachusetts", "United States" });
+                 1, 8, 1600, 5, "Harvard Square", "Cambridge", "Massachusetts", "United States" });
 
             migrationBuilder.InsertData(
                 table: "Photos",
                 columns: new string[] { "Url", "CameraId", "FilmId", "ExposureIndex", "EntryId", "Location", "City", "State", "Country" },
                 values: new object[] { "https://images.squarespace-cdn.com/content/v1/5c75bf3af4755a07a9edee16/1574904512671-YJEZI0ASKTR75CF3264Q/ke17ZwdGBToddI8pDm48kEEXJqT6UZzo6_T_IEtk8lR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ua7GyuyleZfZLbh1TL99aL4EVZ3HdY4X3R4vaGMghUvwBPQhVEbTV4SmYd07HZaZ-g/15_Rollei_TriX_1600_008.jpg?format=1000w",
-                 1, 8, 1600, 4, "Harvard Square", "Cambridge", "Massachusetts", "United States" });
+                 1, 8, 1600, 5, "Harvard Square", "Cambridge", "Massachusetts", "United States" });
 
             migrationBuilder.InsertData(
                 table: "Photos",
                 columns: new string[] { "Url", "CameraId", "FilmId", "ExposureIndex", "EntryId", "Location", "City", "State", "Country" },
                 values: new object[] { "https://images.squarespace-cdn.com/content/v1/5c75bf3af4755a07a9edee16/1574904659180-6N75BGD72DFWLIRCEO9D/ke17ZwdGBToddI8pDm48kMyX43o3HznWzvVjR9Preul7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mhydAgiKdIfeAoxVgE7c7okPoKA5uALweq0Eh5ZSPFNMZ1UtBwwVjWySAS2xzp0KQ/36_Scans-183.jpg?format=1000w",
-                 2, 3, 320, 4, "Taza Chocolate Factory", "Somerville", "Massachusetts", "United States" });
+                 2, 3, 320, 5, "Taza Chocolate Factory", "Somerville", "Massachusetts", "United States" });
 
             migrationBuilder.InsertData(
                 table: "Photos",
                 columns: new string[] { "Url", "CameraId", "FilmId", "ExposureIndex", "EntryId", "Location", "City", "State", "Country" },
                 values: new object[] { "https://images.squarespace-cdn.com/content/v1/5c75bf3af4755a07a9edee16/1574904774283-L0PIP5D2PG586671GWKZ/ke17ZwdGBToddI8pDm48kNx5nWostyGLDXgtP6oTqa97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UTBOE8dUvI6A1AfXrXM_XnE1wI7c1Cdo4RAe48FANOcwjIjg7l_3EkjvTQ6EpWDFFA/55_Scans-203.jpg?format=1000w",
-                 2, 3, 320, 4, "Frances Appleton Bridge", "Boston", "Massachusetts", "United States" });
+                 2, 3, 320, 5, "Frances Appleton Bridge", "Boston", "Massachusetts", "United States" });
 
             migrationBuilder.InsertData(
                 table: "Photos",
                 columns: new string[] { "Url", "CameraId", "FilmId", "ExposureIndex", "EntryId", "Location", "City", "State", "Country" },
                 values: new object[] { "https://images.squarespace-cdn.com/content/v1/5c75bf3af4755a07a9edee16/1574904783145-F8XHWRJNPO0L5TPXR870/ke17ZwdGBToddI8pDm48kNx5nWostyGLDXgtP6oTqa97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UTBOE8dUvI6A1AfXrXM_XnE1wI7c1Cdo4RAe48FANOcwjIjg7l_3EkjvTQ6EpWDFFA/57_Scans-205.jpg?format=1000w",
-                 2, 3, 320, 4, "Charles River Esplanade", "Boston", "Massachusetts", "United States" });
+                 2, 3, 320, 5, "Charles River Esplanade", "Boston", "Massachusetts", "United States" });
 
             migrationBuilder.InsertData(
                 table: "Photos",
                 columns: new string[] { "Url", "CameraId", "FilmId", "ExposureIndex", "EntryId", "Location", "City", "State", "Country" },
                 values: new object[] { "https://images.squarespace-cdn.com/content/v1/5c75bf3af4755a07a9edee16/1574904841761-NZSNU38FC3FTMZBCUMFH/ke17ZwdGBToddI8pDm48kMyX43o3HznWzvVjR9Preul7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mhydAgiKdIfeAoxVgE7c7okPoKA5uALweq0Eh5ZSPFNMZ1UtBwwVjWySAS2xzp0KQ/64_OM1_Portra400_200_002e.jpg?format=1000w",
-                 2, 3, 320, 4, "The Wilbur", "Boston", "Massachusetts", "United States" });
+                 2, 3, 320, 5, "The Wilbur", "Boston", "Massachusetts", "United States" });
 
             migrationBuilder.InsertData(
                 table: "Photos",
                 columns: new string[] { "Url", "CameraId", "FilmId", "ExposureIndex", "EntryId", "Location", "City", "State", "Country" },
                 values: new object[] { "https://images.squarespace-cdn.com/content/v1/5c75bf3af4755a07a9edee16/1574904854187-KAAW1Y8T3Y3IUN7N9XJ4/ke17ZwdGBToddI8pDm48kGLiFChMyJUKMWGHLjQ_MyF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWn3ENzcpBZyRmeQMEY3QIc0Pqm-af_NBqo9zTR3pPaMqZXtM2t1CwhezoykTJ7VgQ/65_OM1_Portra400_200_003e.jpg?format=1000w",
-                 2, 3, 320, 4, "The Wilbur", "Boston", "Massachusetts", "United States" });
+                 2, 3, 320, 5, "The Wilbur", "Boston", "Massachusetts", "United States" });
 
             migrationBuilder.InsertData(
                 table: "Photos",
                 columns: new string[] { "Url", "CameraId", "FilmId", "ExposureIndex", "EntryId", "Location", "City", "State", "Country" },
                 values: new object[] { "https://images.squarespace-cdn.com/content/v1/5c75bf3af4755a07a9edee16/1574904947979-OM2GALZQKXG57UWXHE2T/ke17ZwdGBToddI8pDm48kMyX43o3HznWzvVjR9Preul7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mhydAgiKdIfeAoxVgE7c7okPoKA5uALweq0Eh5ZSPFNMZ1UtBwwVjWySAS2xzp0KQ/73_OM1_Portra400_200_011e.jpg?format=1000w",
-                 2, 3, 320, 4, "The Wilbur", "Boston", "Massachusetts", "United States" });
+                 2, 3, 320, 5, "The Wilbur", "Boston", "Massachusetts", "United States" });
 
             migrationBuilder.InsertData(
                 table: "Photos",
                 columns: new string[] { "Url", "CameraId", "FilmId", "ExposureIndex", "EntryId", "Location", "City", "State", "Country" },
                 values: new object[] { "https://images.squarespace-cdn.com/content/v1/5c75bf3af4755a07a9edee16/1574904977153-P9GZKCQIH5B20C3610WR/ke17ZwdGBToddI8pDm48kDMnNajdBOJiXJxAvQrjDUl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcCb4xpXvJLLatBUE4d78vxP8vhg6bNuq5rIz27mPI9yrYUjRjvLI-neyS-6l0KA5A/77_OM1_Portra400_200_015e.jpg?format=1000w",
-                 2, 3, 320, 4, "Downtown Crossing", "Boston", "Massachusetts", "United States" });
+                 2, 3, 320, 5, "Downtown Crossing", "Boston", "Massachusetts", "United States" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
