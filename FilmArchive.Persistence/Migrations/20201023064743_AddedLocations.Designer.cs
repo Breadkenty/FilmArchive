@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FilmArchive.Persistence.Migrations
 {
     [DbContext(typeof(FilmArchiveDatabaseContext))]
-    [Migration("20201022225822_CreatedModels")]
-    partial class CreatedModels
+    [Migration("20201023064743_AddedLocations")]
+    partial class AddedLocations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -52,6 +52,9 @@ namespace FilmArchive.Persistence.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("timestamp without time zone");
 
+                    b.Property<string>("ThumbnailUrl")
+                        .HasColumnType("text");
+
                     b.Property<string>("Title")
                         .HasColumnType("text");
 
@@ -73,7 +76,10 @@ namespace FilmArchive.Persistence.Migrations
                     b.Property<int>("Iso")
                         .HasColumnType("integer");
 
-                    b.Property<string>("stock")
+                    b.Property<string>("Size")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Stock")
                         .HasColumnType("text");
 
                     b.HasKey("Id");
@@ -91,11 +97,26 @@ namespace FilmArchive.Persistence.Migrations
                     b.Property<int?>("CameraId")
                         .HasColumnType("integer");
 
+                    b.Property<string>("City")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("text");
+
+                    b.Property<int?>("EntryId")
+                        .HasColumnType("integer");
+
                     b.Property<int>("ExposureIndex")
                         .HasColumnType("integer");
 
                     b.Property<int?>("FilmId")
                         .HasColumnType("integer");
+
+                    b.Property<string>("Location")
+                        .HasColumnType("text");
+
+                    b.Property<string>("State")
+                        .HasColumnType("text");
 
                     b.Property<string>("Url")
                         .HasColumnType("text");
@@ -103,6 +124,8 @@ namespace FilmArchive.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CameraId");
+
+                    b.HasIndex("EntryId");
 
                     b.HasIndex("FilmId");
 
@@ -114,6 +137,10 @@ namespace FilmArchive.Persistence.Migrations
                     b.HasOne("FilmArchive.Domain.Models.Camera", "Camera")
                         .WithMany("Photos")
                         .HasForeignKey("CameraId");
+
+                    b.HasOne("FilmArchive.Domain.Models.Entry", null)
+                        .WithMany("Photos")
+                        .HasForeignKey("EntryId");
 
                     b.HasOne("FilmArchive.Domain.Models.Film", "Film")
                         .WithMany("Photos")

@@ -50,6 +50,9 @@ namespace FilmArchive.Persistence.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("timestamp without time zone");
 
+                    b.Property<string>("ThumbnailUrl")
+                        .HasColumnType("text");
+
                     b.Property<string>("Title")
                         .HasColumnType("text");
 
@@ -71,7 +74,10 @@ namespace FilmArchive.Persistence.Migrations
                     b.Property<int>("Iso")
                         .HasColumnType("integer");
 
-                    b.Property<string>("stock")
+                    b.Property<string>("Size")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Stock")
                         .HasColumnType("text");
 
                     b.HasKey("Id");
@@ -89,6 +95,12 @@ namespace FilmArchive.Persistence.Migrations
                     b.Property<int?>("CameraId")
                         .HasColumnType("integer");
 
+                    b.Property<string>("City")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("text");
+
                     b.Property<int?>("EntryId")
                         .HasColumnType("integer");
 
@@ -97,6 +109,12 @@ namespace FilmArchive.Persistence.Migrations
 
                     b.Property<int?>("FilmId")
                         .HasColumnType("integer");
+
+                    b.Property<string>("Location")
+                        .HasColumnType("text");
+
+                    b.Property<string>("State")
+                        .HasColumnType("text");
 
                     b.Property<string>("Url")
                         .HasColumnType("text");
