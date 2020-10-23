@@ -1,4 +1,7 @@
+using AutoMapper;
+using FilmArchive.Application.Services;
 using FilmArchive.Persistence.Context;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,7 +31,9 @@ namespace FilmArchive.WebUI
             {
                 configuration.RootPath = "ClientApp/dist";
             });
-            services.AddDbContext<FilmArchiveDatabaseContext>(option => option.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<IDbContext, FilmArchiveDatabaseContext>();
+            services.AddMediatR(Application.AssemblyUtility.GetAssembly());
+            services.AddAutoMapper(Application.AssemblyUtility.GetAssembly());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
