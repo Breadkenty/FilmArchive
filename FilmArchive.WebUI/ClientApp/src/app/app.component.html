@@ -1,3 +1,10 @@
 <body>
-  <h1>HUH</h1>
+  <h1>Hello Azure!</h1>
+  <p>vv The information below is driven from data vv</p>
+
+  <div *ngFor="let entry of entries$">
+    <p>{{ entry.title }}</p>
+    <p>{{ entry.date }}</p>
+    <img src="{{ entry.thumbnailUrl }}" style="width: 500px" />
+  </div>
 </body>
