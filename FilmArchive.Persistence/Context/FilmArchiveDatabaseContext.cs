@@ -34,19 +34,10 @@ namespace FilmArchive.Persistence.Context
                 var databaseURL = Environment.GetEnvironmentVariable("DATABASE_URL");
                 var defaultConnectionString = $"server=localhost;database={DEVELOPMENT_DATABASE_NAME}";
 
-                var conn = databaseURL != null ? ConvertPostConnectionToConnectionString(databaseURL) : defaultConnectionString;
+                var conn = databaseURL != null ? databaseURL : defaultConnectionString;
 
                 optionsBuilder.UseNpgsql(conn);
             }
-        }
-
-        private string ConvertPostConnectionToConnectionString(string connection)
-        {
-            var _connection = connection.Replace("postgres://", String.Empty);
-
-            var connectionParts = Regex.Split(_connection, ":|@|/");
-
-            return $"server={connectionParts[2]};database={connectionParts[4]};User Id={connectionParts[0]};password={connectionParts[1]};port={connectionParts[3]}";
         }
     }
 }
