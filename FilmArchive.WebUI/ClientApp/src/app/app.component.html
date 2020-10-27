@@ -1,11 +1,4 @@
 <body>
-  <h1>Hello Azure!</h1>
-  <h2>Check out this change I added for a commit!</h2>
-  <p>vv The information below is driven from data vv</p>
-
-  <div *ngFor="let entry of entries$">
-    <p>{{ entry.title }}</p>
-    <p>{{ entry.date }}</p>
-    <img src="{{ entry.thumbnailUrl }}" style="width: 500px" />
-  </div>
+  <app-nav-bar></app-nav-bar>
+  <app-entries></app-entries>
 </body>
