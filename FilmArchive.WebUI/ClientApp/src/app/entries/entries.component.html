@@ -1,5 +1,16 @@
-<div *ngFor="let entry of entries$">
+<!-- <button [class.active]="filterBy == 'Boston'" (click)="filterBy = 'all'" )>
+  Boston
+</button>
+<button [class.active]="filterBy == 'Pacific'" (click)="filterBy = 'all'" )>
+  Pacific Coast
+</button>
+<button [class.active]="filterBy == 'Blairsville'" (click)="filterBy = 'all'" )>
+  Blairsville
+</button> -->
+<div *ngFor="let entry of entries$ | imageFilter: filterBy">
   <p>{{ entry.title }}</p>
   <p>{{ entry.date }}</p>
-  <img src="{{ entry.thumbnailUrl }}" style="width: 500px" />
+  <a [routerLink]="['/entry', entry.id]"
+    ><img src="{{ entry.thumbnailUrl }}" style="width: 500px"
+  /></a>
 </div>
