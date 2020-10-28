@@ -9,6 +9,7 @@ using FilmArchive.Domain.Models;
 using FilmArchive.Persistence.Context;
 using MediatR;
 using FilmArchive.Application.CQRS.Entries.GetEntries;
+using FilmArchive.Application.CQRS.Entries.GetEntry;
 
 namespace FilmArchive.WebUI.Controllers
 {
@@ -34,18 +35,14 @@ namespace FilmArchive.WebUI.Controllers
         }
 
         // GET: api/Entries/5
-        // [HttpGet("{id}")]
-        // public async Task<ActionResult<Entry>> GetEntry(int id)
-        // {
-        //     var entry = await _context.Entries.FindAsync(id);
+        [HttpGet("{id}")]
+        public async Task<ActionResult<GetEntryResponse>> GetEntry(int id)
+        {
+            var query = new GetEntryRequest { Id = id };
+            var result = await _mediator.Send(query);
 
-        //     if (entry == null)
-        //     {
-        //         return NotFound();
-        //     }
-
-        //     return entry;
-        // }
+            return Ok(result);
+        }
 
         // // PUT: api/Entries/5
         // // To protect from overposting attacks, enable the specific properties you want to bind to, for
