@@ -1,4 +1,29 @@
 <body>
-  <app-nav-bar></app-nav-bar>
-  <router-outlet></router-outlet>
+  <!-- <app-nav-bar></app-nav-bar>
+  <router-outlet></router-outlet> -->
+  <header>
+    <div></div>
+    <a href="#">
+      <h1>kento kawakami film archive</h1>
+    </a>
+    <ul>
+      <li><a href="#">Upload</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <a
+      class="entry"
+      [routerLink]="['/entry', entry.id]"
+      *ngFor="let entry of entries$"
+      [style.backgroundImage]="'url(' + entry.thumbnailUrl + ')'"
+    >
+      <div class="overlay"></div>
+      <div class="title">
+        <p>{{ entry.title }}</p>
+        <p>{{ convertDate(entry.date) }}</p>
+      </div>
+    </a>
+  </section>
 </body>
