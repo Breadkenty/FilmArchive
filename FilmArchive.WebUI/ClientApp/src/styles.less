@@ -45,7 +45,7 @@ header {
 
     li {
       .brandon-grotesque();
-      .upper-case();
+      .lower-case();
       font-size: @xSmallFont;
       margin-right: @smallSpacer;
     }
@@ -53,14 +53,14 @@ header {
 }
 
 // Entries
-section {
+.entries {
   margin-top: @largeSpacer;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   .transition(@ease-out);
 
-  .entry {
+  a {
     margin: @smallSpacer;
     width: 100vw;
     max-width: 400px;
@@ -115,3 +115,83 @@ section {
 }
 
 // Entry
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: @largeSpacer;
+
+  position: relative;
+
+  > div {
+    position: relative;
+
+    &:hover {
+      .photo-caption {
+        .transition(@ease-out);
+        opacity: 1;
+      }
+    }
+
+    img {
+      width: 100vw;
+      max-width: 425px;
+      margin-bottom: @xSmallSpacer;
+    }
+
+    .photo-caption {
+      opacity: 0;
+      padding: @smallSpacer @mediumSpacer;
+      bottom: 8px;
+      border-radius: 0 4px 0 0;
+      left: 0;
+      position: fixed;
+      z-index: 1;
+      background-color: hsla(100, 10%, 100%, 1);
+    }
+  }
+
+  .caption {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: 20%;
+    border-radius: 2px 0px 0px 0px;
+    box-shadow: -5px -5px 20px hsla(0, 0%, 0%, 0.1);
+
+    overflow: scroll;
+
+    padding: @mediumSpacer @largeSpacer;
+
+    background-color: white;
+
+    transform: translateY(92px);
+    .transition(@ease-out);
+
+    &:hover {
+      transform: translateY(0);
+    }
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* make scrollbar transparent */
+    }
+
+    h2 {
+      margin-bottom: @smallSpacer;
+    }
+
+    h3 {
+      margin-bottom: @smallSpacer;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .caption {
+      transform: translateY(71px);
+    }
+  }
+}

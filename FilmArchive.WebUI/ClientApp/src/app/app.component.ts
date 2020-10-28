@@ -2,7 +2,8 @@ import { Component, OnInit } from "@angular/core";
 import { Data } from "@angular/router";
 import * as moment from "moment";
 import { DataService } from "./data.service";
-import { Entry } from "./entry.model";
+import { Entry } from "./models/Entry/entry.model";
+import { ImageService } from "./shared/image.service";
 
 @Component({
   selector: "app-root",
@@ -10,16 +11,21 @@ import { Entry } from "./entry.model";
 })
 export class AppComponent implements OnInit {
   entries$: Entry[];
+  entry$: Entry;
 
-  constructor(private dataService: DataService) {}
+  constructor(private imageService: ImageService) {}
 
   ngOnInit() {
-    return this.dataService
-      .getEntries()
-      .subscribe((data) => (this.entries$ = data));
+    // return this.imageService
+    //   .getEntries()
+    //   .subscribe((data) => (this.entries$ = data));
+
+    return this.imageService
+      .getEntry(5)
+      .subscribe((data) => (this.entry$ = data));
   }
 
-  convertDate(date) {
-    return moment(date).format("MM/DD/YY");
+  convertDate(date: Date, format: string) {
+    return moment(date).format(format);
   }
 }

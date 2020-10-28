@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, SimpleChanges } from "@angular/core";
-import { Entry } from "../entry.model";
+import { Entry } from "../models/Entry/entry.model";
 import { ImageService } from "../shared/image.service";
 
 @Component({

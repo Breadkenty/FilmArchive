@@ -1,3 +1,9 @@
+@xSmallFont: 0.4rem;
+@smallFont: 0.5rem;
+@mediumFont: 0.7rem;
+@largeFont: 1rem;
+@xLargeFont: 1.5rem;
+
 @font-face {
   font-family: "EB Garamond", serif;
   src: url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@100;400;700&display=swap");
@@ -19,14 +25,29 @@
   letter-spacing: 0.08rem;
 }
 
+.lower-case {
+  text-transform: lowercase;
+  letter-spacing: 0.08rem;
+}
+
 a {
   &:hover {
     color: @darkGrey;
   }
 }
 
-@xSmallFont: 0.4rem;
-@smallFont: 0.5rem;
-@mediumFont: 0.7rem;
-@largeFont: 1.3rem;
-@xLargeFont: 1.5rem;
+h2 {
+  .brandon-grotesque();
+  .lower-case();
+  font-size: @mediumFont;
+}
+h3 {
+  .brandon-grotesque();
+  .lower-case();
+  font-size: @smallFont;
+}
+
+p {
+  .garamond();
+  font-size: @smallFont;
+}
