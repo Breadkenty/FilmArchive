@@ -1,8 +1,10 @@
 import { Component, OnInit } from "@angular/core";
-import { Entry } from "../models/Entry/entry.model";
-import { ImageService } from "../shared/ImageService/image.service";
 import { ActivatedRoute } from "@angular/router";
-import { DateService } from "../shared/DateService/date.service";
+
+import { Entry } from "src/app/models/Entry/entry.model";
+
+import { DateService } from "src/app/shared/DateService/date.service";
+import { ImageService } from "src/app/shared/ImageService/image.service";
 
 @Component({
   selector: "app-entry",

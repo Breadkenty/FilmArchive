@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { Entry } from "../models/Entry/entry.model";
-import { DateService } from "../shared/DateService/date.service";
-import { ImageService } from "../shared/ImageService/image.service";
+import { Entry } from "../../models/Entry/entry.model";
+import { DateService } from "../../shared/DateService/date.service";
+import { ImageService } from "../../shared/ImageService/image.service";
 
 @Component({
   selector: "app-entries",

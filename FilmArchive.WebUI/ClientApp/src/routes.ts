@@ -1,6 +1,6 @@
 import { Routes } from "@angular/router";
-import { EntriesComponent } from "./app/entries/entries.component";
-import { EntryComponent } from "./app/entry/entry.component";
+import { EntriesComponent } from "./app/components/entries/entries.component";
+import { EntryComponent } from "./app/components/entry/entry.component";
 
 export const appRoutes: Routes = [
   { path: "", component: EntriesComponent },
