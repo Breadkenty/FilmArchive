@@ -1,16 +1,13 @@
-<!-- <button [class.active]="filterBy == 'Boston'" (click)="filterBy = 'all'" )>
-  Boston
-</button>
-<button [class.active]="filterBy == 'Pacific'" (click)="filterBy = 'all'" )>
-  Pacific Coast
-</button>
-<button [class.active]="filterBy == 'Blairsville'" (click)="filterBy = 'all'" )>
-  Blairsville
-</button> -->
-<div *ngFor="let entry of entries$ | imageFilter: filterBy">
-  <p>{{ entry.title }}</p>
-  <p>{{ entry.date }}</p>
-  <a [routerLink]="['/entry', entry.id]"
-    ><img src="{{ entry.thumbnailUrl }}" style="width: 500px"
-  /></a>
-</div>
+<section class="entries">
+  <a
+    [routerLink]="['/entry', entry.id]"
+    *ngFor="let entry of entries$"
+    [style.backgroundImage]="'url(' + entry.thumbnailUrl + ')'"
+  >
+    <div class="overlay"></div>
+    <div class="title">
+      <p>{{ entry.title }}</p>
+      <p>{{ dateService$.convertDate(entry.date, "MM/DD/YY") }}</p>
+    </div>
+  </a>
+</section>

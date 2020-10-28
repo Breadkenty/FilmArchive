@@ -1,4 +1,35 @@
-<div *ngFor="let photo of entry$">
-  <p>{{ photo.location }}</p>
-  <img src="{{ photo.Url }}" style="width: 500px" />
-</div>
+<section class="entry">
+  <div *ngFor="let photo of entry$.photos">
+    <img src="{{ photo.url }}" />
+    <div class="photo-caption">
+      <p>
+        {{
+          photo.camera.brand +
+            " " +
+            photo.camera.model +
+            " " +
+            photo.camera.year
+        }}
+      </p>
+      <p>
+        {{
+          photo.film.brand +
+            " " +
+            photo.film.stock +
+            " " +
+            photo.film.iso +
+            " " +
+            photo.film.size
+        }}
+      </p>
+      <p>EI: {{ photo.exposureIndex }}</p>
+      <b>{{ photo.location }}</b>
+      <p>{{ photo.city + ", " + photo.state + " " + photo.country }}</p>
+    </div>
+  </div>
+  <div class="caption">
+    <b>{{ entry$.title }}</b>
+    <h3>{{ dateService$.convertDate(entry$.date, "MMMM DD, YYYY") }}</h3>
+    <p>{{ entry$.notes }}</p>
+  </div>
+</section>

@@ -4,20 +4,21 @@ import { FormsModule } from "@angular/forms";
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { RouterModule } from "@angular/router";
 
+import { appRoutes } from "src/routes";
+
 import { AppComponent } from "./app.component";
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
 import { EntriesComponent } from "./entries/entries.component";
-import { ImageService } from "./shared/image.service";
-import { ImageFilterPipe } from "./shared/filter.pipe";
 import { EntryComponent } from "./entry/entry.component";
-import { appRoutes } from "src/routes";
+
+import { ImageService } from "./shared/ImageService/image.service";
+import { DateService } from "./shared/DateService/date.service";
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     EntriesComponent,
-    ImageFilterPipe,
     EntryComponent,
   ],
   imports: [
@@ -26,7 +27,7 @@ import { appRoutes } from "src/routes";
     FormsModule,
     RouterModule.forRoot(appRoutes),
   ],
-  providers: [ImageService, ImageFilterPipe],
+  providers: [ImageService, DateService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

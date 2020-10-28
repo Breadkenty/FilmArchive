@@ -1,7 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { Entry } from "../models/Entry/entry.model";
-import { ImageService } from "../shared/image.service";
+import { ImageService } from "../shared/ImageService/image.service";
 import { ActivatedRoute } from "@angular/router";
+import { DateService } from "../shared/DateService/date.service";
 
 @Component({
   selector: "app-entry",
@@ -10,13 +11,18 @@ import { ActivatedRoute } from "@angular/router";
 })
 export class EntryComponent implements OnInit {
   entry$: Entry;
+  dateService$;
 
   constructor(
-    private imageServive: ImageService,
-    private route: ActivatedRoute
+    private imageService: ImageService,
+    private route: ActivatedRoute,
+    private dateService: DateService
   ) {}
 
   ngOnInit() {
-    this.imageServive.getEntry(+this.route.snapshot.params["id"]);
+    this.dateService$ = this.dateService;
+    this.imageService
+      .getEntry(this.route.snapshot.params["id"])
+      .subscribe((data) => (this.entry$ = data));
   }
 }

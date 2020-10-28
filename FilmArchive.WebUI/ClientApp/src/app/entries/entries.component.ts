@@ -1,21 +1,24 @@
-import { Component, Input, OnChanges, SimpleChanges } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { Entry } from "../models/Entry/entry.model";
-import { ImageService } from "../shared/image.service";
+import { DateService } from "../shared/DateService/date.service";
+import { ImageService } from "../shared/ImageService/image.service";
 
 @Component({
   selector: "app-entries",
   templateUrl: "./entries.component.html",
   styleUrls: ["./entries.component.less"],
 })
-export class EntriesComponent implements OnChanges {
-  @Input() filterBy?: string = "all";
+export class EntriesComponent implements OnInit {
   entries$: Entry[];
+  dateService$;
 
-  constructor(private imageService: ImageService) {
-    this.imageService.getEntries().subscribe((data) => (this.entries$ = data));
-  }
+  constructor(
+    private imageService: ImageService,
+    private dateService: DateService
+  ) {}
 
-  ngOnChanges() {
+  ngOnInit() {
+    this.dateService$ = this.dateService;
     this.imageService.getEntries().subscribe((data) => (this.entries$ = data));
   }
 }
