@@ -13,6 +13,8 @@ import { EntryComponent } from "./components/entry/entry.component";
 
 import { ImageService } from "./shared/ImageService/image.service";
 import { DateService } from "./shared/DateService/date.service";
+import { AboutComponent } from "./components/about/about.component";
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { DateService } from "./shared/DateService/date.service";
     NavBarComponent,
     EntriesComponent,
     EntryComponent,
+    AboutComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "ng-cli-universal" }),
