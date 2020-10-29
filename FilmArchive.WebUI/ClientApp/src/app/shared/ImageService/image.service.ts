@@ -15,4 +15,14 @@ export class ImageService {
   getEntry(id: number) {
     return this._http.get<Entry>(`/api/Entries/${id}`);
   }
+
+  async uploadImages(files) {
+    const response = await fetch("/api/Uploads", {
+      method: "POST",
+      body: files,
+    });
+    const apiResponse = await response.json();
+    const url = apiResponse.url;
+    return url;
+  }
 }

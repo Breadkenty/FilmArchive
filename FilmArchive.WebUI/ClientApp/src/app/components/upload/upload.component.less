@@ -1,0 +1,45 @@
+@import "../../../styles.less";
+
+.upload {
+  .sectionSpacer();
+  padding: @xLargeSpacer;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  form {
+    max-width: 600px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea {
+      margin: @mediumSpacer;
+
+      border: none;
+      border-bottom: 2px solid @lightGrey;
+    }
+  }
+
+  .dropzone {
+    width: 100vw;
+    max-width: 600px;
+    height: auto;
+    min-height: 200px;
+
+    border: 1px dashed @lightGrey;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .ngx-dz-hovered {
+    border: 1px solid @darkGrey;
+    color: #dadada !important;
+  }
+}

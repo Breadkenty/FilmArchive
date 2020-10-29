@@ -1,0 +1,23 @@
+<section class="upload">
+  <h2>Create Entry</h2>
+  <form>
+    <input name="title" placeholder="Title" />
+    <input type="date" name="date" />
+    <textarea name="notes" placeholder="Notes"></textarea>
+  </form>
+  <div class="dropzone" (change)="onSelect($event)" ngx-dropzone>
+    <h3 ngx-dropzone-label>Drag your images here</h3>
+
+    <ngx-dropzone-image-preview
+      ngProjectAs="ngx-dropzone-preview"
+      *ngFor="let f of files"
+      [file]="f"
+      [removable]="true"
+      (removed)="onRemove(f)"
+    >
+    </ngx-dropzone-image-preview>
+  </div>
+  <button (click)="checkFiles()">check files (open console for link)</button>
+  <!-- <p>{{ progress }}</p>
+  <p>{{ message }}</p> -->
+</section>
